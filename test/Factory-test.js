@@ -51,8 +51,9 @@ describe("Factory", function () {
 
     let transaction = await lotteryClone.init('clone');
     await transaction.wait();
-    transaction = await lottery.init('original');
-    await transaction.wait();
+    // error
+    // transaction = await lottery.init('original');
+    // await transaction.wait();
 
     console.log('lotteryClone greet: \t', await lotteryClone.greet());
     console.log('lottery greet: \t', await lottery.greet());

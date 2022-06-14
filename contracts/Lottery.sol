@@ -12,8 +12,7 @@ contract Lottery is Initializable{
     string public publicGreeting;
 
     constructor(string memory _greeting) {
-        console.log("Deploying a Greeter with greeting:", _greeting);
-        greeting = _greeting;
+        init(_greeting);
     }
 
     function init(string memory _greeting) public initializer {
